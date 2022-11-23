@@ -1,0 +1,9 @@
+*.d
+*.o
+*.diff
+*.result
+*.raw
+*.out
+*.s
+*.exec
+p4

@@ -1,0 +1,18 @@
+https://powcoder.com
+代写代考加微信 powcoder
+Assignment Project Exam Help
+Add WeChat powcoder
+- Write a program that takes about 60 seconds to run in your interpreter
+  then run the compiled version and measure its execution time.
+
+  * What is the runtime for both versions?
+  * Try to explain the difference
+
+  The interpreter first interprets the logic of the fun code, and then it is getting compiled into machine language and ran. However for the compiler, the code is directly converted into machine code and ran by the CPU immediately with one less layer of obstruction. 
+
+- Why is it a good idea to "mov $0,%rax" before calling printf?
+  Because printf can have different number of arguments, and when we are dealing with only integers, we want to make sure that the number of arguments is set to zero. Whereas any other number would result in the inconsisitency with the int type.
+
+- Why does my implementation of p4.c use the "-static" gcc flag? Do your best
+  to explain the reason. Try to remove the flag and see the what happens
+  The static option is implemented so that it forces the linker to reject shared libraries to avoid confusions in case anything is defined elsewhere, and it requires the static library to be linked.
